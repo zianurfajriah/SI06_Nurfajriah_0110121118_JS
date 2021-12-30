@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>login Nurfajriah Halimatuz Zahra</title>
+</head>
+<style>
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+    span{
+        visibility: hidden;
+        color: red;
+    }
+</style>
+<body>
+    <label for="">Username: </label>
+    <input type="text" id="nama" placeholder="Silahkan Masukan Nama Anda" size="30"><br>
+    <span>Username Tidak Boleh Kosong</span><br><br>
+
+    <label for="">Email: </label>
+    <input type="email" id="email" placeholder="Silahkan Masukan Email Anda" size="30"><br>
+    <span>Email Tidak Boleh Kosong</span><br><br>
+
+    <label for="">Jam Terbang: </label>
+    <input type="time" id="jam" placeholder="Silahkan Masukan Jam Terbang "><br>
+    <span>Jam Terbang Tidak Boleh Kosong</span><br><br>
+
+    <label for="">Tujuan Berangkat: </label>
+    <input type="text" id="tujuan" placeholder="Silahkan Masukan tujuan berangkat" size="40"><br>
+    <span>Tujuan Berangkat Tidak Boleh Kosong</span><br><br>
+
+    <label for="">Jumlah Tiket: </label>
+    <input type="number" id="jumlah" placeholder="Silahkan Masukan jumlah tiket" size="30"><br>
+    <span>Jumlah Tiket Boleh Kosong</span><br><br>
+    <button onclick="validasi()">Submit</button>
+
+    <div>
+        <p id="submit1"></p>
+        <p id="submit2"></p>
+        <p id="submit3"></p>
+        <p id="submit4"></p>
+        <p id="submit5"></p>
+    </div>
+
+<script>
+    let nama = document.getElementById("nama")
+    let email = document.getElementById("email")
+    let jam = document.getElementById("jam")
+    let jumlah = document.getElementById("jumlah")
+    let tiket = document.getElementById("tiket")
+    let span = document.getElementsByTagName("span")
+
+    function validasi(){
+        if (nama.value == "" || nama.value.length >= 30 ) {
+            span[0].style.visibility = "visible"
+        }
+        else{
+            document.getElementById("submit1").innerHTML = "Nama : " + nama.value;
+        }
+
+        if (email.value == "") {
+            span[1].style.visibility = "visible"
+        }
+        else{
+            document.getElementById("submit2").innerHTML = "Email : " + email.value;
+        }
+
+        if (jam.value == "" ) {
+            span[2].style.visibility = "visible"
+        }
+        else{
+            document.getElementById("submit3").innerHTML = "Jam Keberangkatan : " + jam.value;
+        }
+
+        if (tujuan.value == "") {
+            span[3].style.visibility = "visible"
+        }
+        else{
+            document.getElementById("submit4").innerHTML = "Tujuan : " + tujuan.value;
+        }
+
+        if (jumlah.value == "") {
+            span[4].style.visibility = "visible"
+        }
+        else{
+            document.getElementById("submit5").innerHTML = "Jumlah Tiket : " + jumlah.value;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Kurs Nurfajriah Halimatuz Zahra</title>
+    <script>
+        function hitung(){
+            let valas = document.getElementById("valas").value;
+            let nilai = document.getElementById("nilai").value;
+            document.getElementById("hasil").value = nilai * valas;
+        }
+    </script>
+</head>
+<body>
+    <fieldset style="background-color: gainsboro;">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table border="1">
+            <tr>
+                <td>Masukkan Nilai</td>
+                <td>Valas</td>
+                <td>Nilai Rupiah</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="nilai" id="nilai" onchange="hitung()"></td>
+                <td>
+                    <select name="valas" id="valas" onchange="hitung()">
+                        <option value="9915">Dollar US</option>
+                        <option value="13472">Dollar Singapura</option>
+                        <option value="874">Ringgit Malaysia</option>
+                        <option value="120">Yen Jepang</option>
+                        <option value="15888">Euro</option>
+                        <option value="3592">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="text" name="hasil" id="hasil"></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</body>
+</html>

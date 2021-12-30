@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>login Nurfajriah Halimatuz Zahra</title>
+    <style>
+        *{
+            font-family:'Poppins', sans-serif;
+        }
+        body{
+            overflow-y: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: #aad8e6;
+        }
+        form{
+            background-color: rgb(255, 213, 179);
+            width: 25em;
+            padding: 1.9em;
+            padding-right: 3em;
+            margin: 10em auto;
+        }
+        #login{
+            text-transform: uppercase;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin: 2em 0 0 25em;
+            cursor: pointer;
+            width: 90px;
+        }
+        #login:hover{
+            background-color: gray;
+            color: white;
+        }
+        .welcome{
+            background-color: rgb(221, 165, 92);
+            color: white;
+            padding: 1.3em;
+            border-radius: 30px;
+            text-transform: uppercase;
+            margin-left: 5px;
+            text-align: center;
+        }
+        input[type=text], input[type=password]{
+            margin: 0 auto;
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p class="welcome">Welcome!</p>
+        <p>username</p>
+        <input type="text" id="username">
+        <p>password</p>
+        <input type="password" id="password"><br>
+        <input type="submit" value="log in" name="submit" id="login">
+    </form>
+</body>
+<script src="otentikasi.js"></script>
+</html>

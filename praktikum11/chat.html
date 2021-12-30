@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat Nurfajriah Halimatuz Zahra</title>
+    <style>
+        .box{
+            border: 1px solid rgb(0, 0, 0);
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+        }
+        .inp{
+            margin: 0 0 0 10px;
+        }
+    </style>
+    <script>
+        function kirimpesan(){
+            let isipesan = document.getElementById("isipesan").value;
+            document.getElementById("box").innerHTML += isipesan + "<br/>";
+        }
+    </script>
+</head>
+<body>
+    <div class="pojokkanan">
+        <div class="box" id="box">
+        </div>
+        <input class="inp" type="text" id="isipesan">
+        <input type="submit" value="kirim" onclick="kirimpesan()">
+    </div>
+</body>
+    
+</body>
+</html>

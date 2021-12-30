@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image picker</title>
+    <style>
+        .pict{
+            width: 25em;
+            height: 25em;
+        }
+    </style>
+</head>
+<body>
+    <select id="selectOne" onchange="myFunction()">
+    <option value="kucing">Kucing</option>
+    <option value="hamster">Hamster</option>
+    <option value="anjing">Anjing</option>
+    <option value="bebek">Bebek</option>
+    <option value="kelinci">Kelinci</option>
+    </select>
+    <div id="demo"></div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("selectOne").value;
+
+            if (x == "kucing") {
+                kucing = document.getElementById("demo").innerHTML = '<img class="pict" src="image/kucing.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "hamster") {
+                hamster = document.getElementById("demo").innerHTML = '<img class="pict" src="image/hamster.jpg>'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "anjing") {
+                anjing = document.getElementById("demo").innerHTML = '<img class="pict" src="image/anjing.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "bebek") {
+                bebek = document.getElementById("demo").innerHTML = '<img class="pict" src="image/bebek.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "kelinci") {
+                kelinci = document.getElementById("demo").innerHTML = '<img class="pict" src="image/kelinci.jpg">'
+                window.alert("ini gambar " + x);
+            }
+        }
+    </script>
+</body>
+</html>
